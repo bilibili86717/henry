@@ -1,0 +1,26 @@
+{
+  "name": "玻璃成本报价系统",
+  "short_name": "玻璃报价",
+  "description": "玻璃加工成本计算与报价工具 - 支持17道工序，手动输入自动计算，随时随地报价",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f5f7fa",
+  "theme_color": "#2563eb",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%232563eb' rx='40'/%3E%3Ctext x='96' y='128' text-anchor='middle' font-size='96' font-family='Arial' fill='white' font-weight='bold'%3E%E7%8E%BB%3C/text%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%232563eb' rx='100'/%3E%3Ctext x='256' y='340' text-anchor='middle' font-size='240' font-family='Arial' fill='white' font-weight='bold'%3E%E7%8E%BB%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
