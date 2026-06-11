@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="玻璃报价">
+  <title>玻璃成本报价系统</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ 顶部导航 ============ -->
+  <header class="top-bar">
+    <button class="icon-btn" id="btn-history" title="历史记录">
+      <span class="icon">📋</span>
+    </button>
+    <div class="title-area">
+      <h1 class="app-title">玻璃报价</h1>
+      <p class="progress-text" id="progress-text">第 0 / 0 步</p>
+    </div>
+    <button class="icon-btn" id="btn-reset" title="重新开始">
+      <span class="icon">🔄</span>
+    </button>
+  </header>
+
+  <!-- ============ 进度条 ============ -->
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="progress-bar"></div>
+  </div>
+
+  <!-- ============ 主内容区：向导步骤 ============ -->
+  <main class="content" id="content"></main>
+
+  <!-- ============ 底部按钮区 ============ -->
+  <footer class="bottom-bar">
+    <button class="btn btn-secondary" id="btn-prev">← 上一步</button>
+    <button class="btn btn-primary" id="btn-next">下一步 →</button>
+  </footer>
+
+  <!-- ============ 悬浮总价显示（在工序步骤中） ============ -->
+  <div class="floating-total" id="floating-total" style="display:none;">
+    <span class="floating-label">已计算工序</span>
+    <span class="floating-value" id="floating-value">0.00 元/块</span>
+  </div>
+
+  <!-- ============ 历史记录抽屉 ============ -->
+  <div class="drawer" id="history-drawer">
+    <div class="drawer-header">
+      <h2>📋 历史报价记录</h2>
+      <button class="icon-btn" id="btn-close-history">✕</button>
+    </div>
+    <div class="drawer-search">
+      <input type="text" id="history-search" placeholder="搜索客户/项目...">
+    </div>
+    <div class="drawer-content" id="history-list"></div>
+    <div class="drawer-footer">
+      <button class="btn btn-danger" id="btn-clear-history">清空历史</button>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- ============ 提示弹窗 ============ -->
+  <div class="toast" id="toast"></div>
+
+  <!-- ============ Scripts ============ -->
+  <script src="processes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
